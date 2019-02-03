@@ -35,7 +35,7 @@ public class SumOfNumbers {
 
     private static void sumOfNumbers(List<Integer> nums) {
         List<Integer> b = new ArrayList<>();
-        b.add(0, -10);
+        b.add(0, nums.get(0));
         System.out.print(b.get(0) + ", ");
         for (int i = 1; i < nums.size(); i++) {
             b.add(i, (b.get(i - 1) + nums.get(i)));
