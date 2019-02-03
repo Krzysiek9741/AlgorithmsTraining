@@ -7,18 +7,18 @@ public class DrawingFigures {
     }
 
 
-
+//
 
     private static void drawHalfTree() {
-        char[][] a = new char[6][6];
-        for (int i = 0; i < 6; i++){
+        char[][] a = new char[10][10];
+        for (int i = 0; i < 10; i++){
             for (int j = 0; j<=i; j++){
                     a[i][j] = '*';
 
             }
         }
-        for(int i=0; i< 6; i++){
-            for(int j=0; j< 6; j++)
+        for(int i=0; i< 10; i++){
+            for(int j=0; j< 10; j++)
                 System.out.print(a[i][j]);
             System.out.println();
         }
@@ -26,8 +26,8 @@ public class DrawingFigures {
     }
 
     private static void drawDiagonal() {
-        char[][] a = new char[6][6];
-        for (int i = 0; i < 6; i++){
+        char[][] a = new char[10][10];
+        for (int i = 0; i < 10; i++){
             for (int j = 0; j<=i; j++){
                 if (i == j) {
                     a[i][j] = '*';
@@ -36,28 +36,28 @@ public class DrawingFigures {
                 }
             }
         }
-        for(int i=0; i< 6; i++){
-            for(int j=0; j< 6; j++)
+        for(int i=0; i< 10; i++){
+            for(int j=0; j< 10; j++)
                 System.out.print(a[i][j]);
             System.out.println();
         }
     }
 
     private static void drawZero() {
-        char[][] a = new char[6][6];
-        for (int i = 0; i < 6; i++){
-            for (int j = 0; j<6; j++){
-                if (i == 0 || i == 5) {
+        char[][] a = new char[10][10];
+        for (int i = 0; i < 10; i++){
+            for (int j = 0; j<10; j++){
+                if (i == 0 || i == 9) {
                     a[i][j] = '*';
-                }else if (j == 0 || j == 5){
+                }else if (j == 0 || j == 9){
                     a[i][j] = '*';
                 }else{
                     a[i][j] = ' ';
                 }
             }
         }
-        for(int i=0; i< 6; i++){
-            for(int j=0; j< 6; j++)
+        for(int i=0; i< 10; i++){
+            for(int j=0; j< 10; j++)
                 System.out.print(a[i][j]);
             System.out.println();
         }
@@ -65,12 +65,12 @@ public class DrawingFigures {
     }
 
     private static void drawX() {
-        char[][] a = new char[6][6];
-        for (int i = 0; i < 6; i++){
-            for (int j = 0; j<6; j++){
+        char[][] a = new char[10][10];
+        for (int i = 0; i < 10; i++){
+            for (int j = 0; j<10; j++){
                 if (i == j) {
                     a[i][j] = '*';
-                }else if (j == 5-i) {
+                }else if (j == 9-i) {
                     a[i][j] = '*';
 
                 }else{
@@ -78,8 +78,8 @@ public class DrawingFigures {
                 }
             }
         }
-        for(int i=0; i< 6; i++){
-            for(int j=0; j< 6; j++)
+        for(int i=0; i< 10; i++){
+            for(int j=0; j< 10; j++)
                 System.out.print(a[i][j]);
             System.out.println();
         }
