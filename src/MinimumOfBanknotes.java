@@ -1,6 +1,6 @@
 public class MinimumOfBanknotes {
     public static void main(String[] args) {
-        minimumNumberOfBanknotes(235.78);
+        minimumNumberOfBanknotes(235.79);
     }
 
     private static void minimumNumberOfBanknotes(double value) {
