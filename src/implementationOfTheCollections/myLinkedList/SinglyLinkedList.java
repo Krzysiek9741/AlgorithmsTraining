@@ -1,4 +1,4 @@
-package implementationOfTheCollections;
+package implementationOfTheCollections.myLinkedList;
 
 public class SinglyLinkedList {
 
@@ -23,11 +23,17 @@ public class SinglyLinkedList {
             head = element;
             return;
         }
-        Element previousOne = getElementWithThePreviousIndex(index);
-        Element nextOne = getElementWithIndex(index);
+        if (index == 1 ){
+            element.setNext(head);
+            head = element;
+            return;
+        }else {
+            Element previousOne = getElementWithThePreviousIndex(index);
+            Element nextOne = getElementWithIndex(index);
 
-        previousOne.setNext(element);
-        element.setNext(nextOne);
+            previousOne.setNext(element);
+            element.setNext(nextOne);
+        }
     }
 
     public void printList() {

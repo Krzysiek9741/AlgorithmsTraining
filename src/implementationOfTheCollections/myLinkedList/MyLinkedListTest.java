@@ -1,6 +1,6 @@
-package implementationOfTheCollections;
+package implementationOfTheCollections.myLinkedList;
 
-public class Main {
+public class MyLinkedListTest {
     public static void main(String[] args) {
         SinglyLinkedList myList = new SinglyLinkedList();
         Element elem1 = new Element("1");
@@ -17,7 +17,7 @@ public class Main {
         myList.addElement(elem3);
         myList.addElement(elem4);
         myList.addElement(elem5);
-        myList.addElement(elem6, 3);
+        myList.addElement(elem6, 1);
         myList.printList();
     }
 }

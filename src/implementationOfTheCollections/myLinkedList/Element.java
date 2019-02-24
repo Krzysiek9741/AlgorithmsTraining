@@ -1,4 +1,4 @@
-package implementationOfTheCollections;
+package implementationOfTheCollections.myLinkedList;
 
 public class Element {
 
