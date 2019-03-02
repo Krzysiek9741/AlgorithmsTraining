@@ -7,6 +7,7 @@ public class Company {
         Employee employee3 = new Employee("Dorothy", 30, 2300);
         Employee employee4 = new Employee("Jim", 29, 3000);
         Employee employee5 = new Employee("Anna", 40, 3200);
+        Employee employee6 = new Employee("Mike", 27, 2950);
 
         Manager manager1 = new Manager("Frank", 45, 5500);
         Manager manager2 = new Manager("Peter", 47, 6200);
@@ -17,6 +18,7 @@ public class Company {
 
         manager2.addSubordinate(employee2);
         manager2.addSubordinate(employee5);
+        manager2.addSubordinate(employee6);
 
         System.out.println(employee2.getManager());
     }
