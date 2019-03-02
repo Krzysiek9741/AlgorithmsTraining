@@ -25,4 +25,12 @@ public class Employee extends Person {
     public void setManager(Manager manager) {
         this.manager = manager;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

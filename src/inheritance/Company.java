@@ -20,6 +20,11 @@ public class Company {
         manager2.addSubordinate(employee5);
         manager2.addSubordinate(employee6);
 
-        System.out.println(employee2.getManager());
+        System.out.println(employee1.getManager());
+
+        System.out.println("--------------------------------");
+
+        manager1.getSubordinates().stream()
+                .forEach(System.out::println);
     }
 }

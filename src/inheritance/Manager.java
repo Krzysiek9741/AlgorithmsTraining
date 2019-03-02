@@ -10,6 +10,14 @@ public class Manager extends Employee {
         super(name, age, salary);
     }
 
+    public ArrayList<Employee> getSubordinates() {
+        return subordinates;
+    }
+
+    public void setSubordinates(ArrayList<Employee> subordinates) {
+        this.subordinates = subordinates;
+    }
+
     public void addSubordinate(Employee employee){
         subordinates.add(employee);
         employee.setManager(this);
